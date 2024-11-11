@@ -1,0 +1,11 @@
+# modules
+node_modules
+
+# distribution
+dist
+
+# config & keys
+.env
+
+# misc
+.DS_STORE
