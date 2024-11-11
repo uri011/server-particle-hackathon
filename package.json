@@ -17,7 +17,7 @@
         "setup": "npm install",
         "start": "node ./dist/app.js"
     },
-    "main": "./dist/app.js",
+    "main": "./public/app.js",
     "devDependencies": {
         "@types/chai": "^4.3.14",
         "@types/cors": "^2.8.17",
