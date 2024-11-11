@@ -15,7 +15,7 @@
         "pre:pwsh": "@powershell npm run clean:pwsh && npm run build",
         "server:pwsh": "@powershell npm run pre:pwsh && node ./dist/app.js",
         "setup": "npm install",
-        "start": "node ./dist/app.js"
+        "start": "node ./public/app.js"
     },
     "main": "./public/app.js",
     "devDependencies": {
