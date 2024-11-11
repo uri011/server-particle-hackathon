@@ -1,0 +1,38 @@
+{
+    "id": "[integer] - Unique ID of the Contract",
+    "contract": "[string] - Unique Name of the Contract - must be same as filename",
+    "name": "[string] - Name of the Contract",
+    "infoUrl": "[string] - Information URL of the Contract",
+    "instances": {
+        "instance": {
+            "instance": "[string] - Unique Name of the Contract Instance - must be same as instance object key",
+            "name": "[string] - Name of the Contract Instance",
+            "network": "[string] - Unique Name of the Network where Contract Instance Deployed",
+            "networkId": "[integer] - Unique ID of the Network where Contract Instance Deployed",
+            "address": "[string] - Address of the Contract Instance",
+            "implAddress": "[string] - Implementation Address of the Contract Instance - equal to address if no proxy contract",
+            "deployBlock": "[integer] - Contract Instance Deployment Block Number",
+            "deployTxHash": "[string] - Contract Instance Deployment Transaction Hash",
+            "erc20": {
+                "symbol": "[string] - Unique Symbol of the ERC20 Token",
+                "uSymbol": "[string] - Smallest Divisible Unit Symbol of the ERC20 Token",
+                "decimals": "[integer] - Number of Decimals of the ERC20 Token"
+            },
+            "cdp": {
+                "synthetic": "[string] - Contract & Contract Instance of ERC20 Synthetic Token",
+                "base": "[array<string>] - Contract & Contract Instance of ERC20 Base Token"
+            },
+            "dex": {
+                "tokens": "[array<string>] - Exchanged Tokens in Contract Instance"
+            },
+            "oracle": {
+                "token": "[string] - Contract & Contract Instance of ERC20 Token Price Feed"
+            },
+            "ve": {
+                "token": "[string] - Contract & Contract Instance of ERC20 Vote Escrow Token"
+            }
+        }
+    },
+    "abi": "[string] - File Path to Contract ABI JSON File",
+    "abiSha256": "[string] - ABI JSON File SHA256 Hash Output"
+}

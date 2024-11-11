@@ -1,0 +1,29 @@
+{
+    "id": "4EC5934E-6F0F-4844-AE23-3EB4EEF94B14",
+    "contract": "arb",
+    "name": "Arbitrum Token",
+    "instances": {
+        "arb": {
+            "id": "20FFEE62-D151-4A24-8121-7BC059707434",
+            "instance": "arb",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0x912CE59144191C1204E64559FE8253a0e49E6548",
+            "implAddress": "0xC4ed0A9Ea70d5bCC69f748547650d32cC219D882",
+            "deployBlock": 70398215,
+            "deployTxHash": "0x9cdbb4672b549c26d97cac29f9cd73c1951656e0622ba4b9ed0abff2ee58698d",
+            "relation": {
+                "entity": "CC2D6581-61A8-4FB5-9D05-C15525F78ABB",
+                "type": "developer"
+            },
+            "erc20": {
+                "symbol": "ARB",
+                "uSymbol": "uARB",
+                "decimals": 18
+            }
+        }
+    },
+    "sourceCode": "https://arbiscan.io/token/0x912ce59144191c1204e64559fe8253a0e49e6548#code",
+    "abi": "arb.json",
+    "abiSha256": "7152b4f8e2d7ab5340b1e4f0735164ab09e911bb72028449c5017e941f42889e"
+}

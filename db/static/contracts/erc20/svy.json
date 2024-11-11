@@ -1,0 +1,28 @@
+{
+    "id": "9D81018F-EC65-47A1-9DD3-B0BBD13B36A9",
+    "contract": "svy",
+    "name": "Savvy DeFi Protocol Token",
+    "instances": {
+        "arb": {
+            "instance": "arb",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0x43aB8f7d2A8Dd4102cCEA6b438F6d747b1B9F034",
+            "implAddress": "0x43aB8f7d2A8Dd4102cCEA6b438F6d747b1B9F034",
+            "deployBlock": 96791462,
+            "deployTxHash": "0x963dffee281fb428fc634c6c7029a783017491178f7346bb8fe303bac61a613b",
+            "relation": {
+                "entity": "C86DA2B3-5D59-4F9F-A240-7834D4C62813",
+                "type": "developer"
+            },
+            "erc20": {
+                "symbol": "SVY",
+                "uSymbol": "uSVY",
+                "decimals": 18
+            }
+        }
+    },
+    "sourceCode": "https://github.com/savvy-finance/savvy-contracts-internal/blob/main/contracts/SavvyProtocolToken.sol",
+    "abi": "svy.json",
+    "abiSha256": "4c086417c4bd30083d470d8eb747a3da7f524387d0d5f37eacfd40ef8bd17f97"
+}

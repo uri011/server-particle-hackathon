@@ -1,0 +1,27 @@
+{
+    "id": "735A4ABD-0094-48E2-B75D-7F3D37B950DB",
+    "contract": "booster",
+    "name": "Savvy DeFi SVY Rewards Distribution Booster",
+    "instances": {
+        "arb": {
+            "id": "D6EB14C4-C175-4639-9DCB-E67F5E3D3C65",
+            "instance": "arb",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0xbf837f2C7894cfF859a01d078d7AAa8c47221a2F",
+            "implAddress": "0x338e2319A40aE8Dc72AbcE7d8E6B6caF697E50D5",
+            "deployBlock": 96798714,
+            "deployTxHash": "0x596b7635af566bcf05e1ace847737d72e07ff6ccae84d11e168b325f41ecfda6",
+            "relation": {
+                "entity": "C86DA2B3-5D59-4F9F-A240-7834D4C62813",
+                "type": "developer"
+            },
+            "ve": {
+                "token": "svy.arb"
+            }
+        }
+    },
+    "sourceCode": "https://github.com/savvy-finance/savvy-contracts-internal/blob/main/contracts/SavvyBooster.sol",
+    "abi": "booster.json",
+    "abiSha256": "6e3f302ea619216a3376fdacbfc3525aa08031df89f9495930aede63616027af"
+}

@@ -1,0 +1,64 @@
+{
+    "id": "6029CD35-C75E-4846-A91C-21B9FB192717",
+    "contract": "lm",
+    "name": "Savvy DeFi Loan Migrator",
+    "instances": {
+        "lmBtc": {
+            "id": "3510A55E-46EF-4057-A689-1A8F0C09AEF5",
+            "instance": "lmBtc",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0x916a0Ec8AAfda0578EdE37FfE45b29f0cb1eAD00",
+            "implAddress": "0x716d2C488Cd255F2010879bd7e3e88a31bB30400",
+            "deployBlock": 169825581,
+            "deployTxHash": "0x8199ba6e7da5e50e29b4529458758d6e13f03d6793dcede1980518f7fc64ed48",
+            "relation": {
+                "entity": "C86DA2B3-5D59-4F9F-A240-7834D4C62813",
+                "type": "developer"
+            },
+            "cdp": {
+                "synthetic": "sv.svBtc",
+                "base": ["wbtc.arb"]
+            }
+        },
+        "lmEth": {
+            "id": "9BF5BD79-4B6C-465E-AF6F-BAA6A9CE3E4E",
+            "instance": "lmEth",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0x7bA6A81D8a24B088378F65E8c02Ea07dD0B7bc99",
+            "implAddress": "0x716d2C488Cd255F2010879bd7e3e88a31bB30400",
+            "deployBlock": 169825293,
+            "deployTxHash": "0x2644e0c814990a761eb185933fbfeb8861949afc3bf1f231eba92ac290059711",
+            "relation": {
+                "entity": "C86DA2B3-5D59-4F9F-A240-7834D4C62813",
+                "type": "developer"
+            },
+            "cdp": {
+                "synthetic": "sv.svEth",
+                "base": ["weth.arb"]
+            }
+        },
+        "lmUsd": {
+            "id": "C9F41172-D03B-4C52-99AD-37305EC3726C",
+            "instance": "lmUsd",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0x2a0D14fD6E137Af3C3C13E404A5BAB817a076Ea2",
+            "implAddress": "0x716d2C488Cd255F2010879bd7e3e88a31bB30400",
+            "deployBlock": 163062796,
+            "deployTxHash": "0x2f436517624edd734e199f637f357c8992b87a704921d0f5701c4652a8ce4c72",
+            "relation": {
+                "entity": "C86DA2B3-5D59-4F9F-A240-7834D4C62813",
+                "type": "developer"
+            },
+            "cdp": {
+                "synthetic": "sv.svUsd",
+                "base": ["TBD"]
+            }
+        }
+    },
+    "sourceCode": "https://github.com/savvy-finance/savvy-contracts-internal/blob/main/contracts/SavvyLoanMigrator.sol",
+    "abi": "lm.json",
+    "abiSha256": "de3102a49b995a19f7fc65bdf24a4052407299095333fe82227e8db886de5685"
+}

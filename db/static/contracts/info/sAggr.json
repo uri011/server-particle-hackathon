@@ -1,0 +1,25 @@
+{
+    "id": "65A5CBEC-0E27-421D-861D-D249DDD54A4A",
+    "contract": "sAggr",
+    "name": "Savvy DeFi Information Aggregator",
+    "instances": {
+        "arb": {
+            "id": "2828345B-A844-4436-A44A-99EF61506F2E",
+            "instance": "arb",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0x68D54ff41BA47355b95Bd477Bcf4d5ff4b2c2A59",
+            "implAddress": "0x48d1e9bC55b8F199D5fc8f960Bf909313847A448",
+            "deployBlock": 96798753,
+            "deployTxHash": "0x062ec83cb39ad67b3d4f6f6fb155f7428d6d64603b0efe0d62aac05e5689170c",
+            "relation": {
+                "entity": "C86DA2B3-5D59-4F9F-A240-7834D4C62813",
+                "type": "developer"
+            },
+            "info": {}
+        }
+    },
+    "sourceCode": "https://github.com/savvy-finance/savvy-contracts-internal/blob/main/contracts/InfoAggregator.sol",
+    "abi": "sAggr.json",
+    "abiSha256": "e5c3b557200ca1a9422f10b887e432f618f4846656daa96a2f8b446e349af5e1"
+}

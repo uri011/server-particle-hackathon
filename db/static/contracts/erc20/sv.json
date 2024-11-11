@@ -1,0 +1,69 @@
+{
+    "id": "4A9FA588-34AE-47D1-AE04-C96BCBFC0BBF",
+    "contract": "sv",
+    "name": "Savvy DeFi Synthetic Token",
+    "instances": {
+        "svBtc": {
+            "id": "42D914DD-69C2-485D-B7D2-9A0E8F423B52",
+            "instance": "svBtc",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0xeEE18334c414A47FB886a7317E1885b2Bfb8c2A6",
+            "implAddress": "0xeEE18334c414A47FB886a7317E1885b2Bfb8c2A6",
+            "deployBlock": 100299807,
+            "deployTxHash": "0x04815ce09d946abbb1c130ccb6ec52bb279070756419dec1167cef6ef3f25698",
+            "relation": {
+                "entity": "C86DA2B3-5D59-4F9F-A240-7834D4C62813",
+                "type": "developer"
+            },
+            "erc20": {
+                "symbol": "svBTC",
+                "uSymbol": "usvBTC",
+                "decimals": 18
+            }
+        },
+        "svEth": {
+            "id": "9410308C-E1A8-40D5-8AE9-7DF2F48186FF",
+            "instance": "svEth",
+            "name": "Ether Strategy - Arbitrum One",
+            "network": "arbitrumOne",
+            "networkId": 42161,
+            "address": "0xf7728582002ef82908c8242CF552E969BA863Ffa",
+            "implAddress": "0xf7728582002ef82908c8242CF552E969BA863Ffa",
+            "deployBlock": 100302013,
+            "deployTxHash": "0xaf4a6cf428a1794f44caf3bd5df1c4078bbf8123ea73699eacb1f72402128746",
+            "relation": {
+                "entity": "C86DA2B3-5D59-4F9F-A240-7834D4C62813",
+                "type": "developer"
+            },
+            "erc20": {
+                "symbol": "svETH",
+                "uSymbol": "usvETH",
+                "decimals": 18
+            }
+        },
+        "svUsd": {
+            "id": "A58DEDB8-019D-4861-ACC8-1B35075BEFB2",
+            "instance": "svUsd",
+            "name": "US Dollar Strategy - Arbitrum One",
+            "network": "arbitrumOne",
+            "networkId": 42161,
+            "address": "0xF202Ab403Cd7E90197ec0f010ee897E283037706",
+            "implAddress": "0xF202Ab403Cd7E90197ec0f010ee897E283037706",
+            "deployBlock": 96792339,
+            "deployTxHash": "0xf43754b3927ef918e6ffefd8a8ada5830c7f9df8b9e389a280f1b78d8f1cb926",
+            "relation": {
+                "entity": "C86DA2B3-5D59-4F9F-A240-7834D4C62813",
+                "type": "developer"
+            },
+            "erc20": {
+                "symbol": "svUSD",
+                "uSymbol": "usvUSD",
+                "decimals": 18
+            }
+        }
+    },
+    "sourceCode": "https://github.com/savvy-finance/savvy-contracts-internal/blob/main/contracts/SavvySyntheticToken.sol",
+    "abi": "sv.json",
+    "abiSha256": "679643536a5d22f11ccbd6e8d4b217f7422b010e8b70f6905348636b75ec84ed"
+}

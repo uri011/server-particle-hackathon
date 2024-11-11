@@ -1,0 +1,29 @@
+{
+    "id": "A21F1155-6162-4A69-9485-01EBB5BC7734",
+    "contract": "eth",
+    "name": "Ether",
+    "instances": {
+        "arb": {
+            "id": "32C0752A-4539-4B2F-9039-AE45DF2F2041",
+            "instance": "arb",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+            "implAddress": "0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE",
+            "deployBlock": 0,
+            "deployTxHash": "",
+            "relation": {
+                "entity": "",
+                "type": ""
+            },
+            "erc20": {
+                "symbol": "ETH",
+                "uSymbol": "uWei",
+                "decimals": 18
+            }
+        }
+    },
+    "sourceCode": "",
+    "abi": "",
+    "abiSha256": ""
+}

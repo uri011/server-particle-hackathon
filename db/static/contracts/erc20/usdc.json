@@ -1,0 +1,28 @@
+{
+    "id": "71631A60-0F36-4004-BABF-9FE110F1650D",
+    "contract": "usdc",
+    "name": "USD Coin",
+    "instances": {
+        "arb": {
+            "instance": "arb",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831",
+            "implAddress": "0x86E721b43d4ECFa71119Dd38c0f938A75Fdb57B3",
+            "deployBlock": 34266938,
+            "deployTxHash": "0xec773df8d80c83b23c74d0368f63d095f040c5fc6f9e749d0b429a7410c62662",
+            "relation": {
+                "entity": "2499FB95-DE7C-4FFA-A810-38E94A0F8164",
+                "type": "developer"
+            },
+            "erc20": {
+                "symbol": "USDC",
+                "uSymbol": "uUSDC",
+                "decimals": 6
+            }
+        }
+    },
+    "sourceCode": "https://arbiscan.io/address/0x86E721b43d4ECFa71119Dd38c0f938A75Fdb57B3#code",
+    "abi": "usdc.json",
+    "abiSha256": "773956378f8eb4aaa19a2f2e66c2d84c8e7fec516e519b7369eea0e443118684"
+}

@@ -1,0 +1,61 @@
+{
+    "id": "B91A6341-8ABE-4FE0-B7BE-5BF95D962157",
+    "contract": "link",
+    "name": "Chainlink ERC20 Token Price Feed Oracle",
+    "instances": {
+        "wbtc": {
+            "id": "4046E216-EF2B-4FC4-B9B5-748AAC72CAE7",
+            "instance": "wbtc",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0x6ce185860a4963106506C203335A2910413708e9",
+            "implAddress": "0x6ce185860a4963106506C203335A2910413708e9",
+            "deployBlock": 101519,
+            "deployTxHash": "0xad5a7487ae0c93422aeca73ae7f647f3d2ae3ce853b3839df31bfd4260b41872",
+            "relation": {
+                "entity": "BE37616A-7AF2-45BE-B98F-0BDF590CBEBA",
+                "type": "developer"
+            },
+            "oracle": {
+                "token": "werc20.wbtcArb"
+            }
+        },
+        "weth": {
+            "id": "44E1271F-EDB6-41AE-B194-EE88A991AA04",
+            "instance": "weth",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0x639Fe6ab55C921f74e7fac1ee960C0B6293ba612",
+            "implAddress": "0x639Fe6ab55C921f74e7fac1ee960C0B6293ba612",
+            "deployBlock": 101490,
+            "deployTxHash": "0x696c90687c36860e9cb15dc9a6904d52463d5effdc2692d0107a024da62a424b",
+            "relation": {
+                "entity": "BE37616A-7AF2-45BE-B98F-0BDF590CBEBA",
+                "type": "developer"
+            },
+            "oracle": {
+                "token": "weth.arb"
+            }
+        },
+        "usdc": {
+            "id": "A1C55608-1076-4010-AFCD-CE80FE37CE28",
+            "instance": "usdc",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0x50834F3163758fcC1Df9973b6e91f0F0F0434aD3",
+            "implAddress": "0x50834F3163758fcC1Df9973b6e91f0F0F0434aD3",
+            "deployBlock": 101256,
+            "deployTxHash": "0x55aadc3253ac28ae88b1a00c22c357fab6c22f0bf7a74e48530ce70f764ac501",
+            "relation": {
+                "entity": "BE37616A-7AF2-45BE-B98F-0BDF590CBEBA",
+                "type": "developer"
+            },
+            "oracle": {
+                "token": "usdc.arb"
+            }
+        }
+    },
+    "sourceCode": "https://arbiscan.io/address/0xcc3370bde6afe51e1205a5038947b9836371eccb#code",
+    "abi": "link.json",
+    "abiSha256": "08ef334d7d4d1eb3eb55d79c61d11de45820d94ba312ceed78a1d1f85cd1dbf0"
+}

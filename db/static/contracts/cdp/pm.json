@@ -1,0 +1,64 @@
+{
+    "id": "F11CEBE1-AD9A-45BA-9CA2-2B29FE393954",
+    "contract": "pm",
+    "name": "Savvy DeFi Position Manager",
+    "instances": {
+        "pmBtc": {
+            "id": "CB197A0B-A448-473D-A0B8-9447234B9F27",
+            "instance": "pmBtc",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0x3204d81C73F8100766C1691A67078b16Ec7c142c",
+            "implAddress": "0x4505aBf34aac9e3F3A75D2aAc8fd82A7547645B4",
+            "deployBlock": 100300012,
+            "deployTxHash": "0x82acd9d1f8bc4ea844f131fefdae388ca27be7b43574908a666c3654ecf63add",
+            "relation": {
+                "entity": "C86DA2B3-5D59-4F9F-A240-7834D4C62813",
+                "type": "developer"
+            },
+            "cdp": {
+                "synthetic": "sv.svBtc",
+                "base": ["werc20.wbtcArb"]
+            }
+        },
+        "pmEth": {
+            "id": "98AC0C57-93A6-4DB7-BC25-96954118ACA5",
+            "instance": "pmEth",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0x5c4eb1909fB21e39Fc45ee753420AeDeBA07F3EF",
+            "implAddress": "0x4505aBf34aac9e3F3A75D2aAc8fd82A7547645B4",
+            "deployBlock": 100302141,
+            "deployTxHash": "0x99b4376dd244f4ea98ee4e6855ebd78f64b4803025f757f88304dcf0cb3b519f",
+            "relation": {
+                "entity": "C86DA2B3-5D59-4F9F-A240-7834D4C62813",
+                "type": "developer"
+            },
+            "cdp": {
+                "synthetic": "sv.svEth",
+                "base": ["weth.arb"]
+            }
+        },
+        "pmUsd": {
+            "id": "77E174EA-34A2-4C40-B1EE-140384EDC22D",
+            "instance": "pmUsd",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0x36358A1597DB299033b16fda567010D53c0A4EdA",
+            "implAddress": "0x4505aBf34aac9e3F3A75D2aAc8fd82A7547645B4",
+            "deployBlock": 96806558,
+            "deployTxHash": "0x6d2470180db3f17aaba6f4a19287da183442cb8e0228a75299c80760aad06934",
+            "relation": {
+                "entity": "C86DA2B3-5D59-4F9F-A240-7834D4C62813",
+                "type": "developer"
+            },
+            "cdp": {
+                "synthetic": "sv.svUsd",
+                "base": ["TBD"]
+            }
+        }
+    },
+    "sourceCode": "https://github.com/savvy-finance/savvy-contracts-internal/blob/main/contracts/SavvyPositionManager.sol",
+    "abi": "pm.json",
+    "abiSha256": "9d2068e46ea6a134b1d35a44dc287b92e8c0f32249567440286d0cb0e961f75b"
+}

@@ -1,0 +1,449 @@
+[
+    { "inputs": [], "stateMutability": "nonpayable", "type": "constructor" },
+    {
+        "anonymous": false,
+        "inputs": [
+            { "indexed": false, "internalType": "uint8", "name": "version", "type": "uint8" }
+        ],
+        "name": "Initialized",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "previousOwner",
+                "type": "address"
+            },
+            { "indexed": true, "internalType": "address", "name": "newOwner", "type": "address" }
+        ],
+        "name": "OwnershipTransferStarted",
+        "type": "event"
+    },
+    {
+        "anonymous": false,
+        "inputs": [
+            {
+                "indexed": true,
+                "internalType": "address",
+                "name": "previousOwner",
+                "type": "address"
+            },
+            { "indexed": true, "internalType": "address", "name": "newOwner", "type": "address" }
+        ],
+        "name": "OwnershipTransferred",
+        "type": "event"
+    },
+    {
+        "inputs": [],
+        "name": "FIXED_POINT_SCALAR",
+        "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "acceptOwnership",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            { "internalType": "address[]", "name": "_savvyPositionManagers", "type": "address[]" }
+        ],
+        "name": "addSavvyPositionManager",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "components": [
+                    { "internalType": "address", "name": "baseToken", "type": "address" },
+                    { "internalType": "address", "name": "yieldToken", "type": "address" }
+                ],
+                "internalType": "struct ISavvyInfoAggregatorStructs.SupportTokenInfo[]",
+                "name": "_supportTokens",
+                "type": "tuple[]"
+            }
+        ],
+        "name": "addSupportTokens",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getAllTokenPrice",
+        "outputs": [
+            {
+                "components": [
+                    { "internalType": "address", "name": "tokenAddress", "type": "address" },
+                    { "internalType": "uint256", "name": "priceUSD", "type": "uint256" }
+                ],
+                "internalType": "struct ISavvyInfoAggregatorStructs.TokenPriceData[]",
+                "name": "",
+                "type": "tuple[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getAvailableCredit",
+        "outputs": [{ "internalType": "int256", "name": "", "type": "int256" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [{ "internalType": "address", "name": "user_", "type": "address" }],
+        "name": "getAvailableCreditToken",
+        "outputs": [
+            {
+                "components": [
+                    { "internalType": "address", "name": "savvyPositionManager", "type": "address" },
+                    { "internalType": "int256", "name": "amount", "type": "int256" }
+                ],
+                "internalType": "struct ISavvyInfoAggregatorStructs.DebtInfo[]",
+                "name": "",
+                "type": "tuple[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [{ "internalType": "address", "name": "user_", "type": "address" }],
+        "name": "getAvailableDepositTokenAmount",
+        "outputs": [
+            {
+                "components": [
+                    { "internalType": "address", "name": "baseToken", "type": "address" },
+                    { "internalType": "uint256", "name": "amount", "type": "uint256" }
+                ],
+                "internalType": "struct ISavvyInfoAggregatorStructs.SavvyPosition[]",
+                "name": "",
+                "type": "tuple[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [{ "internalType": "address", "name": "owner_", "type": "address" }],
+        "name": "getBorrowableAmount",
+        "outputs": [
+            {
+                "components": [
+                    { "internalType": "address", "name": "baseToken", "type": "address" },
+                    { "internalType": "uint256", "name": "amount", "type": "uint256" }
+                ],
+                "internalType": "struct ISavvyInfoAggregatorStructs.SavvyPosition[]",
+                "name": "",
+                "type": "tuple[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            {
+                "internalType": "contract ISavvyPositionManager",
+                "name": "savvyPositionManager",
+                "type": "address"
+            },
+            { "internalType": "address", "name": "account_", "type": "address" },
+            { "internalType": "address", "name": "yieldToken", "type": "address" }
+        ],
+        "name": "getFullUserHarvestedYield",
+        "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            { "internalType": "address", "name": "user_", "type": "address" },
+            { "internalType": "address", "name": "poolAddress_", "type": "address" }
+        ],
+        "name": "getPoolDeposited",
+        "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            { "internalType": "address", "name": "poolAddress_", "type": "address" },
+            { "internalType": "address", "name": "savvyPositionManager_", "type": "address" }
+        ],
+        "name": "getPoolUtilization",
+        "outputs": [
+            { "internalType": "uint256", "name": "", "type": "uint256" },
+            { "internalType": "uint256", "name": "", "type": "uint256" }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [{ "internalType": "address", "name": "user_", "type": "address" }],
+        "name": "getSVYAPY",
+        "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [{ "internalType": "address", "name": "user_", "type": "address" }],
+        "name": "getSVYEarnRate",
+        "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getSVYPrice",
+        "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getSavvyPositionManagers",
+        "outputs": [{ "internalType": "address[]", "name": "", "type": "address[]" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getTotalDebtAmount",
+        "outputs": [{ "internalType": "int256", "name": "", "type": "int256" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [{ "internalType": "address", "name": "user_", "type": "address" }],
+        "name": "getTotalDebtTokenAmount",
+        "outputs": [
+            {
+                "components": [
+                    { "internalType": "address", "name": "savvyPositionManager", "type": "address" },
+                    { "internalType": "int256", "name": "amount", "type": "int256" }
+                ],
+                "internalType": "struct ISavvyInfoAggregatorStructs.DebtInfo[]",
+                "name": "",
+                "type": "tuple[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getTotalDepositedAmount",
+        "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [{ "internalType": "address", "name": "user_", "type": "address" }],
+        "name": "getTotalDepositedTokenAmount",
+        "outputs": [
+            {
+                "components": [
+                    { "internalType": "address", "name": "baseToken", "type": "address" },
+                    { "internalType": "uint256", "name": "amount", "type": "uint256" }
+                ],
+                "internalType": "struct ISavvyInfoAggregatorStructs.SavvyPosition[]",
+                "name": "",
+                "type": "tuple[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getTotalSVYStaked",
+        "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getTotalSVYStakedUSD",
+        "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "getTotalValueLocked",
+        "outputs": [{ "internalType": "uint256", "name": "totalValueLocked", "type": "uint256" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [{ "internalType": "address", "name": "user_", "type": "address" }],
+        "name": "getUserAvailableCredit",
+        "outputs": [{ "internalType": "int256", "name": "", "type": "int256" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [{ "internalType": "address", "name": "user_", "type": "address" }],
+        "name": "getUserClaimableSVYAmount",
+        "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [{ "internalType": "address", "name": "user_", "type": "address" }],
+        "name": "getUserClaimableVeSVYAmount",
+        "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [{ "internalType": "address", "name": "user_", "type": "address" }],
+        "name": "getUserDebtAmount",
+        "outputs": [{ "internalType": "int256", "name": "", "type": "int256" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [{ "internalType": "address", "name": "user_", "type": "address" }],
+        "name": "getUserDepositedAmount",
+        "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [{ "internalType": "address", "name": "user_", "type": "address" }],
+        "name": "getUserSVYBalance",
+        "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [{ "internalType": "address", "name": "user_", "type": "address" }],
+        "name": "getUserStakedSVYAmount",
+        "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [{ "internalType": "address", "name": "user_", "type": "address" }],
+        "name": "getUserVeSVYBalance",
+        "outputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [{ "internalType": "address", "name": "owner_", "type": "address" }],
+        "name": "getWithdrawableAmount",
+        "outputs": [
+            {
+                "components": [
+                    { "internalType": "address", "name": "savvyPositionManager", "type": "address" },
+                    { "internalType": "address", "name": "yieldToken", "type": "address" },
+                    { "internalType": "uint256", "name": "amount", "type": "uint256" },
+                    { "internalType": "uint256", "name": "shares", "type": "uint256" }
+                ],
+                "internalType": "struct ISavvyInfoAggregatorStructs.SavvyWithdrawInfo[]",
+                "name": "",
+                "type": "tuple[]"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [
+            { "internalType": "address[]", "name": "_savvyPositionManagers", "type": "address[]" },
+            {
+                "components": [
+                    { "internalType": "address", "name": "baseToken", "type": "address" },
+                    { "internalType": "address", "name": "yieldToken", "type": "address" }
+                ],
+                "internalType": "struct ISavvyInfoAggregatorStructs.SupportTokenInfo[]",
+                "name": "_supportTokens",
+                "type": "tuple[]"
+            },
+            { "internalType": "contract ISavvyPriceFeed", "name": "priceFeed_", "type": "address" },
+            { "internalType": "contract ISavvyToken", "name": "svyToken_", "type": "address" },
+            { "internalType": "contract ISavvyBooster", "name": "svyBooster_", "type": "address" },
+            { "internalType": "contract IVeSvy", "name": "veSvy_", "type": "address" }
+        ],
+        "name": "initialize",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [{ "internalType": "address", "name": "addr", "type": "address" }],
+        "name": "isSavvyPositionManager",
+        "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "owner",
+        "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "pendingOwner",
+        "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "renounceOwnership",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "svyBooster",
+        "outputs": [{ "internalType": "contract ISavvyBooster", "name": "", "type": "address" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "svyPriceFeed",
+        "outputs": [{ "internalType": "contract ISavvyPriceFeed", "name": "", "type": "address" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "svyToken",
+        "outputs": [{ "internalType": "contract ISavvyToken", "name": "", "type": "address" }],
+        "stateMutability": "view",
+        "type": "function"
+    },
+    {
+        "inputs": [{ "internalType": "address", "name": "newOwner", "type": "address" }],
+        "name": "transferOwnership",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+    },
+    {
+        "inputs": [],
+        "name": "veSvy",
+        "outputs": [{ "internalType": "contract IVeSvy", "name": "", "type": "address" }],
+        "stateMutability": "view",
+        "type": "function"
+    }
+]

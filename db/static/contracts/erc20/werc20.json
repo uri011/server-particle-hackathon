@@ -1,0 +1,46 @@
+{
+    "id": "FB046D7D-0991-44A2-BA8E-12FE006BA968",
+    "contract": "werc20",
+    "name": "Standard Wrapped ERC20",
+    "instances": {
+        "wbtcArb": {
+            "instance": "wbtcArb",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f",
+            "implAddress": "0x3f770Ac673856F105b586bb393d122721265aD46",
+            "deployBlock": 2591,
+            "deployTxHash": "0x8ebe1945f039f865af8b3079df3819534340ee41a5e6b8bfefb9c36a857778c9",
+            "relation": {
+                "entity": "D9F7E86C-4EEE-4261-AAA1-967D8ADDD584",
+                "type": "developer"
+            },
+            "erc20": {
+                "symbol": "WBTC",
+                "uSymbol": "uWBTC",
+                "decimals": 8
+            }
+        },
+        "magicArb": {
+            "instance": "magicArb",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0x539bdE0d7Dbd336b79148AA742883198BBF60342",
+            "implAddress": "0x3f770Ac673856F105b586bb393d122721265aD46",
+            "deployBlock": 2028077,
+            "deployTxHash": "0x77ebf89151aac4c91c0b05a241489186de9b451ad992199f9ba9ec46ac87dd77",
+            "relation": {
+                "entity": "B829E404-CE93-4283-8C6C-2A0B314AD48A",
+                "type": "developer"
+            },
+            "erc20": {
+                "symbol": "MAGIC",
+                "uSymbol": "uMAGIC",
+                "decimals": 18
+            }
+        }
+    },
+    "sourceCode": "https://arbiscan.io/address/0x3f770Ac673856F105b586bb393d122721265aD46#code",
+    "abi": "werc20.json",
+    "abiSha256": "0c8f93846544dc9df779c83ed6886801b86b7f477fcbd2a0c33cc89bcdc10f7a"
+}

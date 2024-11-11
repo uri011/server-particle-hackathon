@@ -1,0 +1,64 @@
+{
+    "id": "83E7C9D1-AABD-421D-8AA4-BD0CC7F0AA3F",
+    "contract": "sage",
+    "name": "Savvy DeFi Sage",
+    "instances": {
+        "btc": {
+            "id": "0CF25491-4DCC-40C6-8728-1E0C66D5BD25",
+            "instance": "btc",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0x2fcCd0f67d0722f5EB7c1A404DFF0224544155E3",
+            "implAddress": "0xF8f20Cbafa5ED9c7C5a4fA8f07AB0B62Bb078ff9",
+            "deployBlock": 100299868,
+            "deployTxHash": "0x15188d61b607aff5db3d04efc8b046a58319f728b189aa12f4f2bf8d510c7713",
+            "relation": {
+                "entity": "C86DA2B3-5D59-4F9F-A240-7834D4C62813",
+                "type": "developer"
+            },
+            "cdp": {
+                "synthetic": "sv.svBtc",
+                "base": ["werc20.wbtcArb"]
+            }
+        },
+        "eth": {
+            "id": "299D410C-F730-43B5-9BC0-3CD2B0513A59",
+            "instance": "eth",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0xCd5156Fdd53fD9A0f5bfc37B212DD9c989C10533",
+            "implAddress": "0xF8f20Cbafa5ED9c7C5a4fA8f07AB0B62Bb078ff9",
+            "deployBlock": 100302052,
+            "deployTxHash": "0xde4265bcd9c847f36a0b093cc0b51fa802c7f1e068beb4dfae0b683b52c327f2",
+            "relation": {
+                "entity": "C86DA2B3-5D59-4F9F-A240-7834D4C62813",
+                "type": "developer"
+            },
+            "cdp": {
+                "synthetic": "sv.svEth",
+                "base": ["weth.arb"]
+            }
+        },
+        "usd": {
+            "id": "2C7DA751-1D25-48E3-8E8C-604D61AA776F",
+            "instance": "usd",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0x78A370c3d5fFF93Da53a2B088a117244c52AF857",
+            "implAddress": "0x5716F6d3FecC4960C54cd47a8DeB9CAdFab67C5A",
+            "deployBlock": 96806034,
+            "deployTxHash": "0xc0f78a0a99553f0f3c074327ca788c5ce4336854e9e60629096da807428e317c",
+            "relation": {
+                "entity": "C86DA2B3-5D59-4F9F-A240-7834D4C62813",
+                "type": "developer"
+            },
+            "cdp": {
+                "synthetic": "sv.svUsd",
+                "base": ["TBD"]
+            }
+        }
+    },
+    "sourceCode": "https://github.com/savvy-finance/savvy-contracts-internal/blob/main/contracts/SavvySage.sol",
+    "abi": "sage.json",
+    "abiSha256": "fdb2047f248bfea9374deef963bff65efdbcf5666bf08e6c7f3153a766cc3c25"
+}

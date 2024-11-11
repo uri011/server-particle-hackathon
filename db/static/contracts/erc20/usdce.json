@@ -1,0 +1,29 @@
+{
+    "id": "A833A7F9-79D6-42A0-A6CA-19E6BD24A65D",
+    "contract": "usdce",
+    "name": "Bridged USDC",
+    "instances": {
+        "arb": {
+            "id": "3023B6E9-669C-4CB2-9C41-1FFC7F11787E",
+            "instance": "arb",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8",
+            "implAddress": "0x1eFB3f88Bc88f03FD1804A5C53b7141bbEf5dED8",
+            "deployBlock": 2609,
+            "deployTxHash": "0xc91512bf8dbc57cf46a192b5d257d52be5859583515104cfadb1dbc431408fc6",
+            "relation": {
+                "entity": "CC2D6581-61A8-4FB5-9D05-C15525F78ABB",
+                "type": "developer"
+            },
+            "erc20": {
+                "symbol": "USDC.e",
+                "uSymbol": "uUSDC.e",
+                "decimals": 6
+            }
+        }
+    },
+    "sourceCode": "https://arbiscan.io/address/0x1eFB3f88Bc88f03FD1804A5C53b7141bbEf5dED8#code",
+    "abi": "usdce.json",
+    "abiSha256": "2dae3c40ba1a91ef6120cbe6a0623af75bee518a0c687b32ee0c1009ee22bddd"
+}

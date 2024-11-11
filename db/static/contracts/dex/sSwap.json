@@ -1,0 +1,61 @@
+{
+    "id": "E0B2AFA7-1216-4625-B282-DFE8CD6C8221",
+    "contract": "sSwap",
+    "name": "Savvy DeFi Synthetic Token Swap",
+    "instances": {
+        "svBtc": {
+            "id": "082BC91F-A8F0-4962-8DE9-CFC3E2C429DE",
+            "instance": "svBtc",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0x9A3A3ba687Fcb8AFE6367Eff3A5F5A11F51626DA",
+            "implAddress": "0x82bDC3365B3f4D3C0589A6bb8631590146930dF1",
+            "deployBlock": 100300151,
+            "deployTxHash": "0x7fa6476d9953a918e832e6236906e81bd6f3d6148252f412008900f0a2b46880",
+            "relation": {
+                "entity": "C86DA2B3-5D59-4F9F-A240-7834D4C62813",
+                "type": "developer"
+            },
+            "dex": {
+                "tokens": ["sv.svBtc", "wbtc.arb"]
+            }
+        },
+        "svEth": {
+            "id": "B7EF46F1-D89A-4E7F-A6EC-BE1071E63015",
+            "instance": "svEth",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0xb5231e17596bEAf436A25B018bd63e5b42e14135",
+            "implAddress": "0x82bDC3365B3f4D3C0589A6bb8631590146930dF1",
+            "deployBlock": 100302283,
+            "deployTxHash": "0xd1a44aada4f9f5c8204148b2396809af1947d330b1423378ac8d887335ababe9",
+            "relation": {
+                "entity": "C86DA2B3-5D59-4F9F-A240-7834D4C62813",
+                "type": "developer"
+            },
+            "dex": {
+                "tokens": ["sv.svEth", "weth.arb"]
+            }
+        },
+        "svUsd": {
+            "id": "581DB36B-EAC0-42CD-97CC-74CDAA7152B5",
+            "instance": "svUsd",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0xD9565AB01AA30D7Aa2b982b8b1c740480C1C8497",
+            "implAddress": "0x8C1b863bA5fA1422cfB27f0Ce8B650efF9640d85",
+            "deployBlock": 96806902,
+            "deployTxHash": "0x4f8e98331185a146e29a45baf8ca4f61a0c40724bd026e85bf52a3c28ab90d71",
+            "relation": {
+                "entity": "C86DA2B3-5D59-4F9F-A240-7834D4C62813",
+                "type": "developer"
+            },
+            "dex": {
+                "tokens": ["TBD", "TBD"]
+            }
+        }
+    },
+    "sourceCode": "https://github.com/savvy-finance/savvy-contracts-internal/blob/main/contracts/SavvySwap.sol",
+    "abi": "sSwap.json",
+    "abiSha256": "bf1ccba8198162c8f0e76392d8cc0e0153ada90ff1d1f4a369be2a857ef074c6"
+}

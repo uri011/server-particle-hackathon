@@ -1,0 +1,29 @@
+{
+    "id": "5C39AE6F-E67D-4F1F-B313-2EFBC1E8F108",
+    "contract": "frax",
+    "name": "Frax Protocol Token",
+    "instances": {
+        "arb": {
+            "id": "30E60748-1189-4AC0-8605-8DE3439134BF",
+            "instance": "arb",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F",
+            "implAddress": "0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F",
+            "deployBlock": 1693791,
+            "deployTxHash": "0x2e23cd0cfd3ec841b2815d64882310866520fe98c794e80d81b252f4965b1b47",
+            "relation": {
+                "entity": "D6FD45EB-D24D-4909-8E1D-BC125A5F815F",
+                "type": "developer"
+            },
+            "erc20": {
+                "symbol": "FRAX",
+                "uSymbol": "uFRAX",
+                "decimals": 18
+            }
+        }
+    },
+    "sourceCode": "https://github.com/FraxFinance/frax-solidity/blob/master/src/hardhat/contracts/Frax/Frax.sol",
+    "abi": "frax.json",
+    "abiSha256": "d7eb31727f95896e9449ca4f61e558885785d8c6136d70a20a07263c41d871a9"
+}

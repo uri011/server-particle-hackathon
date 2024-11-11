@@ -1,0 +1,29 @@
+{
+    "id": "21A4D912-3224-4453-BFC8-118CB32F0B98",
+    "contract": "frxEth",
+    "name": "Frax Ether",
+    "instances": {
+        "arb": {
+            "id": "790597E1-43C4-4635-B163-2EE31D3BB7FF",
+            "instance": "arb",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0x178412e79c25968a32e89b11f63B33F733770c2A",
+            "implAddress": "0x178412e79c25968a32e89b11f63B33F733770c2A",
+            "deployBlock": 51698319,
+            "deployTxHash": "0x74dda0f6df1267d9c5ee763f44029bfcdfe94e80960c35082d08850096f6bc8d",
+            "relation": {
+                "entity": "D6FD45EB-D24D-4909-8E1D-BC125A5F815F",
+                "type": "developer"
+            },
+            "erc20": {
+                "symbol": "frxETH",
+                "uSymbol": "ufrxETH",
+                "decimals": 18
+            }
+        }
+    },
+    "sourceCode": "TBD",
+    "abi": "frxEth.json",
+    "abiSha256": "0d360b7d9be13dd5d3da0acab25888704bfd05f9fc554e7d97e681b392a9ee62"
+}

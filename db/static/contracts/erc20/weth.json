@@ -1,0 +1,29 @@
+{
+    "id": "47A0DEE7-98A2-4AD8-A83C-1CD6D4857E38",
+    "contract": "weth",
+    "name": "Wrapped Ether",
+    "instances": {
+        "arb": {
+            "id": "5FB7BE33-7007-4020-84E3-FD377F3B2AB1",
+            "instance": "arb",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0x82aF49447D8a07e3bd95BD0d56f35241523fBab1",
+            "implAddress": "0x8b194bEae1d3e0788A1a35173978001ACDFba668",
+            "deployBlock": 55,
+            "deployTxHash": "0x1555f3be9c09cf5bf802109366853cfda812e7a177e755aeb8d9566c5728747e",
+            "relation": {
+                "entity": "5CA5278D-32C8-4A2D-9CC8-37F4900942B1",
+                "type": "developer"
+            },
+            "erc20": {
+                "symbol": "WETH",
+                "uSymbol": "uWETH",
+                "decimals": 18
+            }
+        }
+    },
+    "sourceCode": "https://arbiscan.io/address/0x8b194bEae1d3e0788A1a35173978001ACDFba668#code",
+    "abi": "weth.json",
+    "abiSha256": "e73ea88352cc463141fc368ff5ae8e8d44f831f86e823859b93053ad6bf5f9c7"
+}

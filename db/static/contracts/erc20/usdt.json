@@ -1,0 +1,29 @@
+{
+    "id": "F9A307FB-EA56-4745-B3EF-50749F74B999",
+    "contract": "usdt",
+    "name": "Tether USD",
+    "instances": {
+        "arb": {
+            "id": "467CBDC1-37CC-4C00-9EF8-9D46AD6651C7",
+            "instance": "arb",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9",
+            "implAddress": "0xf31e1AE27e7cd057C1D6795a5a083E0453D39B50",
+            "deployBlock": 228105,
+            "deployTxHash": "0xf4f2c7b536c74d9fc9e752b1ad3c5763fdcd9a2b8a41863ba1297caad2dd4642",
+            "relation": {
+                "entity": "C92EE8C1-C585-4B39-A5CF-2A089ED7FC7D",
+                "type": "developer"
+            },
+            "erc20": {
+                "symbol": "USDT",
+                "uSymbol": "uUSDT",
+                "decimals": 6
+            }
+        }
+    },
+    "sourceCode": "https://arbiscan.io/address/0xf31e1ae27e7cd057c1d6795a5a083e0453d39b50#code",
+    "abi": "usdt.json",
+    "abiSha256": "a3ac5211232f8609c51064bc096ced44610079a46d5557e3b8a752534e10e6bd"
+}

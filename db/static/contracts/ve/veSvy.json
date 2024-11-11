@@ -1,0 +1,27 @@
+{
+    "id": "E29ECB83-AF9F-4F2D-9491-806A38BB5573",
+    "contract": "veSvy",
+    "name": "Savvy DeFi Vote Escrow",
+    "instances": {
+        "arb": {
+            "id": "172E6795-965B-4F6B-A889-DE8F3D994627",
+            "instance": "arb",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0x9aEEe4656F67034B06D99294062feBA1015430ad",
+            "implAddress": "0x31Dc0D579d2D967E852731B7e759E52F668fBAd0",
+            "deployBlock": 120413440,
+            "deployTxHash": "0xcea3e9ea386948e6a9a9441393a3eb6df763260b29f06fe5f3528261a7aad906",
+            "relation": {
+                "entity": "C86DA2B3-5D59-4F9F-A240-7834D4C62813",
+                "type": "developer"
+            },
+            "ve": {
+                "token": "svy.arb"
+            }
+        }
+    },
+    "sourceCode": "https://github.com/savvy-finance/savvy-contracts-internal/blob/main/contracts/VeSvy.sol",
+    "abi": "ve/veSvy.json",
+    "abiSha256": "b4e12b9a0be1bddef5cc523bb84c282ed8ef166c4c7ba1719e7e625b2fa98e6e"
+}

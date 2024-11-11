@@ -1,0 +1,40 @@
+{
+    "name": "wip",
+    "version": "0.0.0",
+    "description": "",
+    "license": "MIT",
+    "type": "module",
+    "scripts": {
+        "build": "tsc",
+        "build:ci": "tsc",
+        "clean": "rm -rf dist",
+        "clean:full": "rm -rf dist && rm -rf node_modules",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "prestart": "npm run clean && npm run build",
+        "clean:pwsh": "@powershell if(test-path dist) {rmdir -r dist}",
+        "pre:pwsh": "@powershell npm run clean:pwsh && npm run build",
+        "server:pwsh": "@powershell npm run pre:pwsh && node ./dist/app.js",
+        "setup": "npm install",
+        "start": "node ./dist/app.js"
+    },
+    "main": "./dist/app.js",
+    "devDependencies": {
+        "@types/chai": "^4.3.14",
+        "@types/cors": "^2.8.17",
+        "@types/express": "^5.0.0",
+        "@types/node": "^20.11.30",
+        "eslint": "^8.57.0",
+        "prettier": "^3.2.5",
+        "typescript": "^5.4.3"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "csv-parse": "^5.5.5",
+        "dotenv": "^16.4.5",
+        "ethers": "^6.13.4",
+        "express": "^4.21.1",
+        "node-cache": "^5.1.2",
+        "node-fetch": "^3.3.2",
+        "viem": "^2.9.2"
+    }
+}

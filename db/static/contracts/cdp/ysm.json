@@ -1,0 +1,64 @@
+{
+    "id": "21CE250E-5F06-4FD4-AC7B-4E99C0A5DF2C",
+    "contract": "ysm",
+    "name": "Savvy DeFi Yield Strategy Manager",
+    "instances": {
+        "ysmBtc": {
+            "id": "F37D78F0-B6DC-425C-A075-B009E05692B7",
+            "instance": "ysmBtc",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0xdC82E20111767f4a2A76A65BD85E41F7859c7b9f",
+            "implAddress": "0x06aF08964240DA52D7c4A383Da3499365D04E35f",
+            "deployBlock": 100299940,
+            "deployTxHash": "0x33f6cbcff3b5d39c02da464ad0701187ae68314627507c537a1ff39e9280e6c7",
+            "relation": {
+                "entity": "C86DA2B3-5D59-4F9F-A240-7834D4C62813",
+                "type": "developer"
+            },
+            "cdp": {
+                "synthetic": "sv.svBtc",
+                "base": ["wbtc.arb"]
+            }
+        },
+        "ysmEth": {
+            "id": "C3D5154A-8893-4406-BC83-B0C17EB14C83",
+            "instance": "ysmEth",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0x23627eb1C6692Adf25AD79285FDe2bc6bdf12C82",
+            "implAddress": "0x06aF08964240DA52D7c4A383Da3499365D04E35f",
+            "deployBlock": 100302086,
+            "deployTxHash": "0xeee96115020b627b297ba574c943c8a6d151509197bea2f3e30c124fa8c3412f",
+            "relation": {
+                "entity": "C86DA2B3-5D59-4F9F-A240-7834D4C62813",
+                "type": "developer"
+            },
+            "cdp": {
+                "synthetic": "sv.svEth",
+                "base": ["werc20.wbtcArb"]
+            }
+        },
+        "ysmUsd": {
+            "id": "4D7A0E37-3F1E-4624-BE73-4E5E4F4D9CB2",
+            "instance": "ysmUsd",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0x09Dde6661fd023cf7c3751555347a5cB8687F806",
+            "implAddress": "0x52c0BEf0E1408e3917277fF6c487D2Fef479Dd18",
+            "deployBlock": 96806068,
+            "deployTxHash": "0xd07590b0740a2759acd25d5bb6f8bc261c1219a1067dc89c3eec304211f6a69f",
+            "relation": {
+                "entity": "C86DA2B3-5D59-4F9F-A240-7834D4C62813",
+                "type": "developer"
+            },
+            "cdp": {
+                "synthetic": "sv.svUsd",
+                "base": ["TBD"]
+            }
+        }
+    },
+    "sourceCode": "https://github.com/savvy-finance/savvy-contracts-internal/blob/main/contracts/YieldStrategyManager.sol",
+    "abi": "ysm.json",
+    "abiSha256": "735fc2584a5afe655fa41f655dcf5cad1331bd5e1b836572cf3b208a2ecf8b6f"
+}

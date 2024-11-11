@@ -1,0 +1,46 @@
+{
+    "id": "F0921E31-3BDE-4594-B1BB-F1C16D361927",
+    "contract": "lpRwdDist",
+    "name": "Savvy DeFi Liquidity Pool ARB Reward Distributor",
+    "instances": {
+        "arb": {
+            "id": "78651F89-057E-4F6E-A6EC-28D73BFD1517",
+            "instance": "arb",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0x3e54aA8A714559752d420832642175f896dC0331",
+            "implAddress": "0x117B57109b2bE611686ea1BE522DC3770d862e0a",
+            "deployBlock": 182016542,
+            "deployTxHash": "0xcf0df990c2ed0e5d9cf5e0e96292bd9ddbc8f63ff7c9a3092cc540d83a005d26",
+            "relation": {
+                "entity": "C86DA2B3-5D59-4F9F-A240-7834D4C62813",
+                "type": "developer"
+            },
+            "cdp": {
+                "synthetic": "",
+                "base": ["arb.arb"]
+            }
+        },
+        "lp": {
+            "id": "87525BED-44E0-4F7A-947B-9B9F0602A522",
+            "instance": "lp",
+            "networkId": 42161,
+            "network": "arbitrumOne",
+            "address": "0xa2d99dDB1853c5B12d8cc040d2Fa32ae5238B178",
+            "implAddress": "0x117B57109b2bE611686ea1BE522DC3770d862e0a",
+            "deployBlock": 128156945,
+            "deployTxHash": "0xb2a156c90cd4554fd2b714ae053c6dbfbb0764cb9cb83d976b17bccb3fded3c7",
+            "relation": {
+                "entity": "C86DA2B3-5D59-4F9F-A240-7834D4C62813",
+                "type": "developer"
+            },
+            "cdp": {
+                "synthetic": "",
+                "base": ["svy.arb"]
+            }
+        }
+    },
+    "sourceCode": "https://github.com/savvy-finance/savvy-contracts-internal/blob/main/contracts/SavvyLPRewardDistributor.sol",
+    "abi": "lpRwdDist.json",
+    "abiSha256": "004f2fde14f365a04832eecacbf910556d28f59b912bb8c375546e99142868d8"
+}
